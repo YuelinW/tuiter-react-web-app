@@ -1,0 +1,191 @@
+.large-border-thin {
+  border-width: 1px; }
+
+.border-color{
+  border-color: rgb(47, 51, 54);
+}
+
+.large-border-thin{
+  border-color: rgb(47, 51, 54);
+}
+
+.large-border-bottom{
+  border-bottom-width: 20px;
+}
+
+
+.border-no-bottom{
+  border-bottom: none;
+}
+.bg-color-gray {
+  background-color: darkgray;
+}
+.border-fat {
+  border-width: 20px 30px 20px 30px; }
+
+.border-solid {
+  border-style: solid; }
+
+.border-color-gray {
+  border-color: darkgray;
+}
+
+.rounded-corners-all-around{
+  border-radius: 30px;
+}
+.margin-left {
+  margin-left: 16px;
+}
+
+.link-dimension {
+  width: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 5px;
+}
+
+.margin-top-link{
+  margin-top: 16px;
+}
+.fg-color-text-search-white {
+  color: white;
+}
+.padding-fat {
+  padding: 15px;
+}
+
+.dimension-search {
+  width: 1000px;
+  height: 20px;
+}
+
+.pos-relative-right-gear {
+  position: relative;
+  bottom: 50px;
+  left: 1200px;
+}
+
+.margin-right-gear {
+  margin-right: 12px;
+}
+
+.border-length{
+  border-width: 20px;
+}
+.pos-relative-link {
+  position: relative;
+  bottom: 99px;
+}
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+
+.grid-row {
+  clear: both;
+}
+
+.grid-col-one-six-page {
+  width: 16%;
+  float: left;
+}
+
+.grid-col-one-two-page {
+  width: 35%;
+  float: left;
+}
+
+.fg-color-Foryou-blue {
+  color: rgb(29, 161, 242);
+}
+
+.fg-color-links-white{
+  color: rgb(110, 118, 125);
+}
+
+.margin-all-around {
+  margin-left: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.border-color-blue {
+  color: rgb(29, 161, 242);
+}
+
+.border-link {
+  border-width: 0px 0px 10px 0px;
+}
+
+.font-size-link {
+  font-size: 15px;
+}
+
+.padding-link{
+  padding: 16px;
+}
+
+.dimension-portrait {
+  width: 200px;
+  height: 100px;
+}
+
+.font-size-topic{
+  font-size: 13px;
+}
+
+.font-color-gray{
+  color: rgb(110, 118, 125);
+}
+
+.dimension-NewYorkTimes {
+  width: 400px;
+  height: 100px;
+}
+
+
+.rounded-corners-pic{
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.margin-right-pic {
+  margin-right: 16px;
+}
+
+.float-done {
+  clear: both;
+}
+
+.border-radius{
+  border-radius: 5px;
+}
+
+.border-bottom-top-posts{
+  border-left: none;
+  border-right:none;
+}
+
+.border-top-posts{
+  border-left: none;
+  border-right:none;
+  border-bottom: none;
+}
