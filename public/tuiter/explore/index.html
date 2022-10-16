@@ -1,329 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Explore</title>
-  <link href="index.css"
-        rel="stylesheet"/>
   <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet"/>
+  <link href="index.css" rel="stylesheet"/>
   <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
-  <script src="../../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+          integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+          crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Explore screen</title>
 </head>
-<body >
-  <div class="row">
-    <div class="col-xl-2 col-xxl-2 col-lg-1 col-md-2 col-sm-2">
-      <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action">
-          <i class="fas fa-home"></i>
-          Home
-        </a>
-        <a href="#" class="d-xl-none list-group-item list-group-item-action">
-          <i class="fas fa-home"></i>
-        </a>
+<body>
 
-        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action active">
-          <i class="fas fa-hashtag"></i>
-          Explore
-        </a>
-        <a href="#" class="d-xl-none list-group-item list-group-item-action">
-          <i class="fas fa-hashtag"></i>
-        </a>
+<div class="container" id="wd-explore"></div>
+<script src="index.js" type="module"></script>
+<!--  <div class="row">-->
+<!--    <div class="col-xl-2 col-xxl-2 col-lg-1 col-md-2 col-sm-2">-->
+<!--      <div class="list-group">-->
+<!--        <a href="#" class="list-group-item list-group-item-action">-->
+<!--          <i class="fab fa-twitter"></i>-->
+<!--        </a>-->
+<!--        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-home"></i>-->
+<!--          Home-->
+<!--        </a>-->
+<!--        <a href="#" class="d-xl-none list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-home"></i>-->
+<!--        </a>-->
 
-        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action">
-          <i class="fas fa-bell"></i>
-          Notifications
-        </a>
-        <a href="#" class="d-xl-none list-group-item list-group-item-action">
-          <i class="fas fa-bell"></i>
-        </a>
+<!--        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action active">-->
+<!--          <i class="fas fa-hashtag"></i>-->
+<!--          Explore-->
+<!--        </a>-->
+<!--        <a href="#" class="d-xl-none list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-hashtag"></i>-->
+<!--        </a>-->
 
-        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action">
-          <i class="fas fa-envelope"></i>
-          Messages
-        </a>
-        <a href="#" class="d-xl-none list-group-item list-group-item-action">
-          <i class="fas fa-envelope"></i>
-        </a>
+<!--        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-bell"></i>-->
+<!--          Notifications-->
+<!--        </a>-->
+<!--        <a href="#" class="d-xl-none list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-bell"></i>-->
+<!--        </a>-->
 
-        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action">
-          <i class="fas fa-bookmark"></i>
-          Bookmarks
-        </a>
-        <a href="#" class="d-xl-none list-group-item list-group-item-action">
-          <i class="fas fa-bookmark"></i>
-        </a>
+<!--        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-envelope"></i>-->
+<!--          Messages-->
+<!--        </a>-->
+<!--        <a href="#" class="d-xl-none list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-envelope"></i>-->
+<!--        </a>-->
 
-        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action">
-          <i class="fas fa-list"></i>
-          Lists
-        </a>
-        <a href="#" class="d-xl-none list-group-item list-group-item-action">
-          <i class="fas fa-list"></i>
-        </a>
+<!--        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-bookmark"></i>-->
+<!--          Bookmarks-->
+<!--        </a>-->
+<!--        <a href="#" class="d-xl-none list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-bookmark"></i>-->
+<!--        </a>-->
 
-        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action">
-          <i class="fas fa-user"></i>
-          Profile
-        </a>
-        <a href="#" class="d-xl-none list-group-item list-group-item-action">
-          <i class="fas fa-user"></i>
-        </a>
+<!--        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-list"></i>-->
+<!--          Lists-->
+<!--        </a>-->
+<!--        <a href="#" class="d-xl-none list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-list"></i>-->
+<!--        </a>-->
 
-        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action">
-          <i class="fas fa-info-circle"></i>
-          More
-        </a>
-        <a href="#" class="d-xl-none list-group-item list-group-item-action">
-          <i class="fas fa-info-circle"></i>
-        </a>
-      </div>
-      <br>
-      <div class="d-grid gap-2">
-        <button class="btn btn-primary override-bs">
-          Tweet
-        </button>
-      </div>
-    </div>
+<!--        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-user"></i>-->
+<!--          Profile-->
+<!--        </a>-->
+<!--        <a href="#" class="d-xl-none list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-user"></i>-->
+<!--        </a>-->
 
-    <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10">
-      <div class="row">
-        <div class="col-10">
-          <div class="position-relative">
-            <input class="ps-5 form-control rounded-pill" placeholder="Search Tuiter"/>
-            <span class="position-absolute wd-search-tuiter "></span>
-          </div>
-        </div>
-        <div class="col-2">
-          <i class="fas fa-cog fa-2x" style="color: blue"></i>
-        </div>
-      </div>
+<!--        <a href="#" class="d-none d-xl-block d-xxl-block list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-info-circle"></i>-->
+<!--          More-->
+<!--        </a>-->
+<!--        <a href="#" class="d-xl-none list-group-item list-group-item-action">-->
+<!--          <i class="fas fa-info-circle"></i>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <br>-->
+<!--      <div class="d-grid gap-2">-->
+<!--        <button class="btn btn-primary override-bs">-->
+<!--          Tweet-->
+<!--        </button>-->
+<!--      </div>-->
+<!--    </div>-->
 
-      <div>
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" href="for-you.html">For You</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="trending.html">Trending</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="news.html">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sports.html">Sports</a>
-          </li>
-          <li class="nav-item d-none d-md-block">
-            <a class="nav-link" href="entertainment.html">Entertainment</a>
-          </li>
-        </ul>
-      </div>
+<!--    <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10">-->
+<!--      <div class="row">-->
+<!--        <div class="col-10">-->
+<!--          <div class="position-relative">-->
+<!--            <input class="ps-5 form-control rounded-pill" placeholder="Search Tuiter"/>-->
+<!--            <span class="position-absolute wd-search-tuiter "></span>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-2">-->
+<!--          <i class="fas fa-cog fa-2x" style="color: blue"></i>-->
+<!--        </div>-->
+<!--      </div>-->
 
-      <div class="position-relative">
-        <img src="starship.jpg" width="100%"/>
-        <h1 class="position-absolute bottom-0 left-0 text-white">SpaceX's Starship</h1>
-      </div>
+<!--      <div>-->
+<!--        <ul class="nav nav-tabs">-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link active" href="for-you.html">For You</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" href="trending.html">Trending</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" href="news.html">News</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item">-->
+<!--            <a class="nav-link" href="sports.html">Sports</a>-->
+<!--          </li>-->
+<!--          <li class="nav-item d-none d-md-block">-->
+<!--            <a class="nav-link" href="entertainment.html">Entertainment</a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
 
-      <ul class="list-group">
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-8">
-              <div class="text-secondary">
-                Web Development
-              </div>
-              <div class="fw-bolder">
-                ReactJS - 2h
-              </div>
-              <div class="fw-bolder">
-                React.js is a Single Page Application framework
-              </div>
-            </div>
-            <div class="col-4">
-              <img class="float-end" src="react.jpg" height="100px">
-            </div>
-          </div>
-        </li>
+<!--      <div class="position-relative">-->
+<!--        <img src="starship.jpg" width="100%"/>-->
+<!--        <h1 class="position-absolute bottom-0 left-0 text-white">SpaceX's Starship</h1>-->
+<!--      </div>-->
 
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-8">
-              <div class="fw-bolder">
-                JavaScript - 2h
-              </div>
-              <div class="fw-bolder">
-                JavaScript is programming language that can run on browsers as well as desktop
-              </div>
-              </div>
-              <div class="col-4">
-                <img class="float-end" src="JavaScript.jpg" height="100px">
-              </div>
-              <div class="text-secondary">
-                123K Tweets
-              </div>
-            </div>
-        </li>
+<!--      <ul class="list-group">-->
+<!--        <li class="list-group-item">-->
+<!--          <div class="row">-->
+<!--            <div class="col-8">-->
+<!--              <div class="text-secondary">-->
+<!--                Web Development-->
+<!--              </div>-->
+<!--              <div class="fw-bolder">-->
+<!--                ReactJS - 2h-->
+<!--              </div>-->
+<!--              <div class="fw-bolder">-->
+<!--                React.js is a Single Page Application framework-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-4">-->
+<!--              <img class="float-end" src="react.jpg" height="100px">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
 
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-8">
-              <div class="text-secondary">
-                Web Development
-              </div>
-              <div class="fw-bolder">
-                jQuery
-              </div>
-              <div class="text-secondary">
-                123K Tweets
-              </div>
-            </div>
-            <div class="col-4">
-              <img class="float-end" src="jQuery.jpg" height="100px">
-            </div>
-          </div>
-        </li>
+<!--        <li class="list-group-item">-->
+<!--          <div class="row">-->
+<!--            <div class="col-8">-->
+<!--              <div class="fw-bolder">-->
+<!--                JavaScript - 2h-->
+<!--              </div>-->
+<!--              <div class="fw-bolder">-->
+<!--                JavaScript is programming language that can run on browsers as well as desktop-->
+<!--              </div>-->
+<!--              </div>-->
+<!--              <div class="col-4">-->
+<!--                <img class="float-end" src="JavaScript.jpg" height="100px">-->
+<!--              </div>-->
+<!--              <div class="text-secondary">-->
+<!--                123K Tweets-->
+<!--              </div>-->
+<!--            </div>-->
+<!--        </li>-->
 
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-8">
-              <div class="text-secondary">
-                Web Development
-              </div>
-              <div class="fw-bolder">
-                NodeJS
-              </div>
-              <div class="text-secondary">
-                123K Tweets
-              </div>
-            </div>
-            <div class="col-4">
-              <img class="float-end" src="NodeJS.jpg" height="100px">
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
+<!--        <li class="list-group-item">-->
+<!--          <div class="row">-->
+<!--            <div class="col-8">-->
+<!--              <div class="text-secondary">-->
+<!--                Web Development-->
+<!--              </div>-->
+<!--              <div class="fw-bolder">-->
+<!--                jQuery-->
+<!--              </div>-->
+<!--              <div class="text-secondary">-->
+<!--                123K Tweets-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-4">-->
+<!--              <img class="float-end" src="jQuery.jpg" height="100px">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
 
-    <div class="col-4 d-none d-lg-block">
-      <ul class="list-group">
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-8">
-              <div class="fw-bolder">
-                Who to follow
-              </div>
-            </div>
-          </div>
-        </li>
+<!--        <li class="list-group-item">-->
+<!--          <div class="row">-->
+<!--            <div class="col-8">-->
+<!--              <div class="text-secondary">-->
+<!--                Web Development-->
+<!--              </div>-->
+<!--              <div class="fw-bolder">-->
+<!--                NodeJS-->
+<!--              </div>-->
+<!--              <div class="text-secondary">-->
+<!--                123K Tweets-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-4">-->
+<!--              <img class="float-end" src="NodeJS.jpg" height="100px">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
 
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2">
-              <img src="Java.jpg" height="50px">
-            </div>
-            <div class="col-7">
-              <div class="fw-bolder">
-                Java
-              </div>
-              <div class="text-secondary">
-                @Java
-              </div>
-            </div>
-            <div class="col-2">
-                <button class="btn btn-primary override-bs">
-                  Follow
-                </button>
-            </div>
-          </div>
-        </li>
+<!--    <div class="col-4 d-none d-lg-block">-->
+<!--      <ul class="list-group">-->
+<!--        <li class="list-group-item">-->
+<!--          <div class="row">-->
+<!--            <div class="col-8">-->
+<!--              <div class="fw-bolder">-->
+<!--                Who to follow-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
 
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2">
-              <img src="RelativitySpace.jpg" height="50px">
-            </div>
-            <div class="col-7">
-              <div class="fw-bolder">
-                RelativitySpace
-              </div>
-              <div class="text-secondary">
-                @relativityspace
-              </div>
-            </div>
-            <div class="col-2">
-              <button class="btn btn-primary override-bs">
-                Follow
-              </button>
-            </div>
-          </div>
-        </li>
+<!--        <li class="list-group-item">-->
+<!--          <div class="row">-->
+<!--            <div class="col-2">-->
+<!--              <img src="Java.jpg" height="50px">-->
+<!--            </div>-->
+<!--            <div class="col-7">-->
+<!--              <div class="fw-bolder">-->
+<!--                Java-->
+<!--              </div>-->
+<!--              <div class="text-secondary">-->
+<!--                @Java-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-2">-->
+<!--                <button class="btn btn-primary override-bs">-->
+<!--                  Follow-->
+<!--                </button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
 
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2">
-              <img src="VirginGalactic.jpg" height="50px">
-            </div>
-            <div class="col-7">
-              <div class="fw-bolder">
-                Virgin Galactic
-              </div>
-              <div class="text-secondary">
-                @virgingalactic
-              </div>
-            </div>
-            <div class="col-2">
-              <button class="btn btn-primary override-bs">
-                Follow
-              </button>
-            </div>
-          </div>
-        </li>
+<!--        <li class="list-group-item">-->
+<!--          <div class="row">-->
+<!--            <div class="col-2">-->
+<!--              <img src="RelativitySpace.jpg" height="50px">-->
+<!--            </div>-->
+<!--            <div class="col-7">-->
+<!--              <div class="fw-bolder">-->
+<!--                RelativitySpace-->
+<!--              </div>-->
+<!--              <div class="text-secondary">-->
+<!--                @relativityspace-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-2">-->
+<!--              <button class="btn btn-primary override-bs">-->
+<!--                Follow-->
+<!--              </button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
 
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2">
-              <img src="NASA.jpg" height="50px">
-            </div>
-            <div class="col-7">
-              <div class="fw-bolder">
-                NASA
-              </div>
-              <div class="text-secondary">
-                @NASA
-              </div>
-            </div>
-            <div class="col-2">
-              <button class="btn btn-primary override-bs">
-                Follow
-              </button>
-            </div>
-          </div>
-        </li>
+<!--        <li class="list-group-item">-->
+<!--          <div class="row">-->
+<!--            <div class="col-2">-->
+<!--              <img src="VirginGalactic.jpg" height="50px">-->
+<!--            </div>-->
+<!--            <div class="col-7">-->
+<!--              <div class="fw-bolder">-->
+<!--                Virgin Galactic-->
+<!--              </div>-->
+<!--              <div class="text-secondary">-->
+<!--                @virgingalactic-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-2">-->
+<!--              <button class="btn btn-primary override-bs">-->
+<!--                Follow-->
+<!--              </button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
 
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-2">
-              <img src="tesla.jpg" height="50px">
-            </div>
-            <div class="col-7">
-              <div class="fw-bolder">
-                Tesla
-              </div>
-              <div class="text-secondary">
-                @tesla
-              </div>
-            </div>
-            <div class="col-2">
-              <button class="btn btn-primary override-bs">
-                Follow
-              </button>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
+<!--        <li class="list-group-item">-->
+<!--          <div class="row">-->
+<!--            <div class="col-2">-->
+<!--              <img src="NASA.jpg" height="50px">-->
+<!--            </div>-->
+<!--            <div class="col-7">-->
+<!--              <div class="fw-bolder">-->
+<!--                NASA-->
+<!--              </div>-->
+<!--              <div class="text-secondary">-->
+<!--                @NASA-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-2">-->
+<!--              <button class="btn btn-primary override-bs">-->
+<!--                Follow-->
+<!--              </button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+
+<!--        <li class="list-group-item">-->
+<!--          <div class="row">-->
+<!--            <div class="col-2">-->
+<!--              <img src="tesla.jpg" height="50px">-->
+<!--            </div>-->
+<!--            <div class="col-7">-->
+<!--              <div class="fw-bolder">-->
+<!--                Tesla-->
+<!--              </div>-->
+<!--              <div class="text-secondary">-->
+<!--                @tesla-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-2">-->
+<!--              <button class="btn btn-primary override-bs">-->
+<!--                Follow-->
+<!--              </button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
 
 
 </body>
