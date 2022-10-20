@@ -9,10 +9,10 @@ const NavigationSidebar = () => {
   return (
       <>
         <div className="list-group">
-          <a href="#" className="list-group-item" style={{color:'gray'}}>
+          <Link to="#" className="list-group-item" style={{color:'gray'}}>
             <i className="bi bi-twitter"></i>
             Tuiter
-          </a>
+          </Link>
           <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`} style={{color:'gray'}}>
             <i className="bi bi-house-fill"></i>
             Home
