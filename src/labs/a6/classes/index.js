@@ -1,10 +1,7 @@
 import React from 'react';
 import './index.css';
-import {BrowserRouter} from "react-router-dom";
-import {Routes, Route} from "react-router";
 
 function Classes() {
-  const color = 'blue';
   const dangerous = true;
   return (
       <div>

@@ -1,6 +1,4 @@
-// import logo from './logo.svg';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './App.css';
 import Labs from "./labs/index.js";
 import HelloWorld from "./labs/a6/hello-world.js";

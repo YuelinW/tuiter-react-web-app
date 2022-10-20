@@ -1,11 +1,7 @@
 import React from "react";
-import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
-import {Link} from "react-router-dom";
-import Nav from "../nav.js";
 import NavigationSidebar from "./navigation-sidebar/index.js";
 import WhoToFollowList from "./who-to-follow-list/index.js";
-import PostSummaryList from "./post-summary-list/index.js";
 import ExploreComponent from "./explore/index.js";
 import HomeComponent from "./home/index.js";
 
