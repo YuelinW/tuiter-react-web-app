@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
