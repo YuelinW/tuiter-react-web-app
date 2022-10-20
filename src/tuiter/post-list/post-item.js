@@ -24,10 +24,10 @@ const PostItem = (  {
             <img width={70} height={70} className="rounded-circle float-start" src={post.headshot} alt="headshot"/>
           </div>
           <div className="col-10">
-            <div><a href="#">{post.userName} <i className="bi bi-patch-check-fill" style={{color:'dodgerblue'}}/> <span style={{color:'gray'}}>{post.handle} .{post.time}</span> <i className="bi bi-three-dots float-end"/> </a></div>
+            <div><p>{post.userName} <i className="bi bi-patch-check-fill" style={{color:'dodgerblue'}}/> <span style={{color:'gray'}}>{post.handle} .{post.time}</span> <i className="bi bi-three-dots float-end"/> </p></div>
             <div>{post.heading}</div>
             <div>
-              <img width="100%" className="rounded-3" src={post.image} alt="post image"/>
+              <img width="100%" className="rounded-3" src={post.image} alt="post"/>
             </div>
             <div className="row mt-3">
               <div className="col-3">

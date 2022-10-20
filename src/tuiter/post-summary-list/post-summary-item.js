@@ -15,12 +15,12 @@ const PostSummaryItem = (
       <li className="list-group-item">
         <div className="row">
           <div className="col-10">
-            <div><a href="#" style={{color:'gray'}}>{post.userName} . {post.time}</a></div>
+            <div><p style={{color:'gray'}}>{post.userName} . {post.time}</p></div>
             <div className="fw-bolder">{post.topic}</div>
-            <div><a href="#" style={{color:'gray'}}>{post.title}</a></div>
+            <div><p style={{color:'gray'}}>{post.title}</p></div>
           </div>
           <div className="col-2">
-            <img width={70} className="float-end rounded-3" src={`/images/${post.image}`} alt="tweeter content image"/>
+            <img width={70} className="float-end rounded-3" src={`/images/${post.image}`} alt="tweeter content"/>
           </div>
         </div>
       </li>

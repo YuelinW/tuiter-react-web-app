@@ -24,30 +24,30 @@ const NavigationSidebar = () => {
           <Link to="/" className="list-group-item" style={{color:'gray'}}>
             Labs
           </Link>
-          <a href="#" className={`list-group-item ${active === 'notifications'?'active':''}`} style={{color:'gray'}}>
+          <Link to="/" className={`list-group-item ${active === 'notifications'?'active':''}`} style={{color:'gray'}}>
             <i className="bi bi-bell-fill"></i>
             Notifications
-          </a>
-          <a href="#" className={`list-group-item ${active === 'message'?'active':''}`} style={{color:'gray'}}>
+          </Link>
+          <Link to="/" className={`list-group-item ${active === 'message'?'active':''}`} style={{color:'gray'}}>
             <i className="bi bi-envelope-fill"></i>
             Messages
-          </a>
-          <a href="#" className={`list-group-item ${active === 'Bookmarks'?'active':''}`} style={{color:'gray'}}>
+          </Link>
+          <Link tof="/" className={`list-group-item ${active === 'Bookmarks'?'active':''}`} style={{color:'gray'}}>
             <i className="bi bi-bookmark-fill"></i>
             Bookmarks
-          </a>
-          <a href="#" className={`list-group-item ${active === 'lists'?'active':''}`} style={{color:'gray'}}>
+          </Link>
+          <Link to="/" className={`list-group-item ${active === 'lists'?'active':''}`} style={{color:'gray'}}>
             <i className="bi bi-list-ul"></i>
             Lists
-          </a>
-          <a href="#" className={`list-group-item ${active === 'profile'?'active':''}`} style={{color:'gray'}}>
+          </Link>
+          <Link to="/" className={`list-group-item ${active === 'profile'?'active':''}`} style={{color:'gray'}}>
             <i className="bi bi-person-fill"></i>
             Profile
-          </a>
-          <a href="#" className={`list-group-item ${active === 'more'?'active':''}`} style={{color:'gray'}}>
+          </Link>
+          <Link to="/" className={`list-group-item ${active === 'more'?'active':''}`} style={{color:'gray'}}>
             <i className="bi bi-circle-fill"></i>
             More
-          </a>
+          </Link>
         </div>
         <div className="d-grid mt-2">
           <a href="tweet.html"
