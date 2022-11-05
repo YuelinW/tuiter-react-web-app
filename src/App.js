@@ -3,16 +3,15 @@ import './App.css';
 import Labs from "./labs/index.js";
 import HelloWorld from "./labs/a6/hello-world.js";
 import Tuiter from "./tuiter/index.js";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Link} from "react-router-dom";
 import {Routes, Route} from "react-router";
 
-
 function App() {
-  return (
+  return(
       <BrowserRouter>
         <div className="container">
           <Routes>
-            <Route index
+            <Route path='/*'
                    element={<Labs/>}/>
             <Route path="/hello"
                    element={<HelloWorld/>}/>
@@ -23,5 +22,5 @@ function App() {
       </BrowserRouter>
   );
 }
-
 export default App;
+

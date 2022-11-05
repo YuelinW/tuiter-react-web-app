@@ -1,6 +1,5 @@
 // alert('Hello World!');
 
-
 console.log('Hello World!');
 console.log('Variables and Constants');
 
@@ -181,6 +180,8 @@ console.log(greeting2);
 
 
 
+
+
 const init = () => {
   console.log('Hello world from jQuery');
   /* do the rest of the lab work here */
@@ -281,6 +282,7 @@ const init = () => {
   }
   hideBtn.click(hideHandler);
   showBtn.click(showHandler);
+
 }
 $(init);
 
