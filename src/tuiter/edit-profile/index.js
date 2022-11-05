@@ -28,46 +28,6 @@ const Index = () => {
   const {pathname} = useLocation();
   const paths = pathname.split('/')
   const active = paths[2];
-  // const initialProfile = useSelector()
-  // const [profile, setProfile] = useState(initialProfile)
-  // const [firstName, setFirstName] = useState(profile.firstName)
-  // const [lastName, setLastName] = useState(profile.lastName)
-  // const [bio, setBio] = useState(profile.bio)
-  // const [location, setLocation] = useState(profile.location)
-  // const [website, setwebsite] = useState(profile.firstName)
-  // const [birthDate, setwebsite] = useState(profile.firstName)
-  // const setFirstName = (e) => {
-  //   const newFirstName = e.target.value;
-  //   const newProfile = {
-  //     firstName: newFirstName,
-  //     lastName: profile.lastName,
-  //     bio: profile.bio,
-  //     location: profile.location,
-  //     birthDate: profile.birthDate
-  //   }
-  //   setProfile(newProfile)
-  // }
-  // const setLastName = (e) => {
-  //   const newLastName = e.target.value;
-  //   const newProfile = {
-  //     ...profile,
-  //     lastName: newLastName
-  //   };
-  //   setProfile(newProfile)
-  // }
-
-  // const [profileBeingEdited, setProfileBeingEdited] = useState()
-  // const [profileEditingString, setProfileEditingString] = useState('')
-  // const [profileString, setProfileString] = useState('')
-  // const profiles = useSelector(state => state.profile)
-  // const dispatch = useDispatch();
-  // const saveEditingProfile = (event) => {
-  //   dispatch(updateProfile({
-  //     ...profile,
-  //     firstName: firstName,
-  //
-  //   }))
-  // }
   return(
       <>
         <div className="row">

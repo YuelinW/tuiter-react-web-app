@@ -4,17 +4,7 @@ import '../../vendors/fontawesome/css/all.css';
 import {Link} from "react-router-dom";
 import {useLocation} from "react-router";
 import {useSelector} from "react-redux";
-const ProfileItem = ({
-  // profile = {
-  //   "_id": 123, "firstName": "Jose", "lastName": "Annunziato", "handle": "@jannunzi",
-  //   "profilePicture": "../../images/arrow-left.jpg", 	"bannerPicture": "../../images/Starship.jpg",
-  //   "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",
-  //   "website": "youtube.com/webdevtv",
-  //   "location": "Boston, MA",	"dateOfBirth": "7/7/1968",	"dateJoined": "4/2009",
-  //   "followingCount": 340,	"followersCount": 223
-  // }
-    setProfile
-}) => {
+const ProfileItem = () => {
   const profile = useSelector(state => state.profile);
   const {pathname} = useLocation();
   const paths = pathname.split('/')
@@ -23,7 +13,6 @@ const ProfileItem = ({
       <>
         <div className="row">
             <div className="col-2">
-              {/*<i className="bi bi-arrow-left float-start"/>*/}
               <img height={48} src={profile.profilePicture} alt="arrow"/>
             </div>
             <div className="col-10">
@@ -35,14 +24,9 @@ const ProfileItem = ({
           <div className="position-absolute">
           <img src={profile.bannerPicture} height={300} width="640" alt="profile-banner"/>
           </div>
-          {/*<div className="row">*/}
-          {/*  <div className="col-9">*/}
           <img  className="position-absolute headshot-relative-pos rounded-circle " width={150} src="../../images/Java.jpg" alt="headshot"/>
-            {/*</div>*/}
-          {/*  <div className="col-3 float-end">*/}
           <Link to="/tuiter/edit-profile" className="position-absolute btn btn-outline-dark rounded-pill button-relative-pos fw-bold">Edit profile</Link>
-          {/*  </div>*/}
-          {/*</div>*/}
+
 
         </div>
 
