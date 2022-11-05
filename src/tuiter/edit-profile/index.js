@@ -26,7 +26,6 @@ const Index = () => {
     navigate(path);
   }
   const {pathname} = useLocation();
-  const paths = pathname.split('/')
   return(
       <>
         <div className="row">
