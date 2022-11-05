@@ -4,7 +4,6 @@ import NavigationSidebar from "./navigation-sidebar/index.js";
 import WhoToFollowList from "./who-to-follow-list/index.js";
 import ExploreComponent from "./explore/index.js";
 import HomeComponent from "./home/index.js";
-import ProfileComponent from "./profile/index.js";
 import whoReducer from "./reducers/who-reducer.js";
 import tuitsReducer from "./reducers/tuits-reducer.js";
 import profileReducer from "./reducers/profile-reducer.js";
