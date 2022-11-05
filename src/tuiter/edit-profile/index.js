@@ -25,7 +25,6 @@ const Index = () => {
     let path = `../profile`;
     navigate(path);
   }
-  const {pathname} = useLocation();
   return(
       <>
         <div className="row">

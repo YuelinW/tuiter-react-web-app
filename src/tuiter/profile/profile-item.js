@@ -5,7 +5,6 @@ import {useLocation} from "react-router";
 import {useSelector} from "react-redux";
 const ProfileItem = () => {
   const profile = useSelector(state => state.profile);
-  const {pathname} = useLocation();
   return(
       <>
         <div className="row">
