@@ -1,6 +1,5 @@
 import React from "react";
 import "./index.css";
-import '../../vendors/fontawesome/css/all.css';
 import {Link} from "react-router-dom";
 import {useLocation} from "react-router";
 import {useSelector} from "react-redux";
