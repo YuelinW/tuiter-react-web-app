@@ -1,4 +1,4 @@
-import React from "react";
+
 import { createSlice } from "@reduxjs/toolkit";
 import whoArray from "../data/who.json";
 

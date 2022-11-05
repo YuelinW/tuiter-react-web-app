@@ -7,7 +7,6 @@ const ProfileItem = () => {
   const profile = useSelector(state => state.profile);
   const {pathname} = useLocation();
   const paths = pathname.split('/')
-  const active = paths[2];
   return(
       <>
         <div className="row">
