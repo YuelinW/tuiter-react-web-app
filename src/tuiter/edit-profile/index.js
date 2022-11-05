@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {updateProfile} from "../reducers/profile-reducer";
 import {useDispatch, useSelector} from "react-redux";
-import {useLocation, useNavigate} from "react-router";
+import {useNavigate} from "react-router";
 import {Link} from "react-router-dom";
 
 const Index = () => {

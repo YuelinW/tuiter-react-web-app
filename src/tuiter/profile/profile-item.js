@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.css";
 import {Link} from "react-router-dom";
-import {useLocation} from "react-router";
 import {useSelector} from "react-redux";
 const ProfileItem = () => {
   const profile = useSelector(state => state.profile);
