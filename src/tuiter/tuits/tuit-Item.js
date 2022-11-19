@@ -1,25 +1,29 @@
 import React from "react";
 import TuitStats from "./tuit-stats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (  {
   tuits = {
     "_id": 123, "topic": "Tesla", "userName": "Tesla",
     "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-    "time": "4d",   "image": "../images/tesla.jpg",
+    "time": "4d",   "image": "Starship.jpg",
     "liked": false,
     "replies": 234,
     "retuits": 543,
     "likes": 3456,
+    "dislike": 0,
     "handle": "@tesla",
     "content": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
   }
 }) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
+  console.log(tuits.userName);
+  console.log(tuits.tuit);
+  console.log(tuits.image);
   return(
       <li className="list-group-item">
         <div className="row">
